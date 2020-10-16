@@ -14,7 +14,7 @@ public class MyLinkedHashMap<K, V> {
 	    	this.myBucketArray.add(null);
 	}
 	private int getBucketIndex(K key) {
-		int hashCode = Math.abs(key.hashCode());
+		int hashCode = Math.abs(key.hashCode());  
 		int index = hashCode % numBuckets;
 		System.out.println("Key: "+key+" hashcode: "+hashCode+" index: "+index);
 		return index;
